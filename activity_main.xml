@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- 音乐文件选择和显示 -->
+    <TextView
+        android:id="@+id/tvSelectedMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择的音乐文件："
+        android:textSize="18sp" />
+
+    <!-- 歌词选择和显示 -->
+    <TextView
+        android:id="@+id/tvSelectedLyrics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择的歌词："
+        android:textSize="18sp" />
+
+    <!-- 倍数控制 -->
+    <SeekBar
+        android:id="@+id/seekBarPlaybackRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        android:max="100" />
+
+    <!-- 音量控制 -->
+    <SeekBar
+        android:id="@+id/seekBarVolume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="50"
+        android:max="100" />
+
+    <!-- 播放列表管理 -->
+    <Button
+        android:id="@+id/btnAddToPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加到播放列表" />
+
+    <Button
+        android:id="@+id/btnShowPlaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示播放列表" />
+
+    <!-- 播放和暂停按钮 -->
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放" />
+
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂停" />
+
+    <!-- 显示当前歌词 -->
+    <TextView
+        android:id="@+id/tvCurrentLyrics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前歌词："
+        android:textSize="18sp" />
+
+</LinearLayout>
